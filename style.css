@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  --ff-for-all:'IBM Plex Sans', sans-serif;
+}
+
+body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 59.2rem;
+  
+  margin: 0px auto; 
+  padding: 3.2rem; 
+
+  border: 1px solid #E1E1E6;
+  border-radius: .6rem;
+}
+
+.steps-header{
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
+
+  width: 52.8rem;
+
+  border-bottom: 1px solid #E1E1E6;
+  padding-bottom: 3.2rem;
+}
+
+.steps-header p{
+  font-family: var(--ff-for-all);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #8D8D99;
+}
+
+.steps-header p span{
+  padding: .5rem 1rem;
+  background: #E1E1E6;
+  border-radius: 100%;
+  margin-right: .8rem;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+
+  color: #8D8D99;
+}
+
+fieldset{
+  border: none;
+  margin-top: 3.2rem;
+}
+
+fieldset div{
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset div label{
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #323238;
+
+  margin-bottom: .4rem;
+}
+
+fieldset > :nth-of-type(n+2){
+  margin-top: 20px;
+}
+
+fieldset div input{
+  width: 52.8rem;
+  padding: 1.6rem;
+  border: 1px solid #E1E1E6;
+  border-radius: .2rem;
+}
+
+button{
+  align-items: flex-end;
+
+  margin-top: 3.2rem;
+  padding: 1.6rem 3.2rem;
+  
+  border: none;
+  border-radius: .6rem;
+
+  background: #633BBC;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  float: right;
+}
